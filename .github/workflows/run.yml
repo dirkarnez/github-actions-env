@@ -6,7 +6,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo ${{ github.workspace }}
-          echo $GITHUB_WORKSPACE
+      # /home/runner/work/github-actions-env/github-actions-env
+      - run: echo ${{ github.workspace }} 
+      
+      # /home/runner/work/github-actions-env/github-actions-env
+      - run: echo $GITHUB_WORKSPACE
      
