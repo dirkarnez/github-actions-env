@@ -1,0 +1,12 @@
+name: github-actions-env-actions-workflow
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo ${{ github.workspace }}
+          echo $GITHUB_WORKSPACE
+     
